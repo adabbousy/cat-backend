@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main  # Change if your default branch is different
+      - main  
 
 jobs:
   deploy:
@@ -11,15 +11,20 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Setup GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Deploy to GitHub Pages
+      - name: Build website
+        run: |
+          mkdir public
+          echo "<h1>Hello, GitHub Pages!</h1>" > public/index.html
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: cat-backend/week3/task1/docs  # Set this to your docs path
+          path: public
 
-      - name: Publish to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
