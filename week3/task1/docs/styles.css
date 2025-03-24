@@ -8,16 +8,16 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.25rem;
+    padding: 1.25rem;
     background-color: #f9f9f9;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
+    border: 0.0625rem solid #e3e3e3;
+    border-radius: 0.3125rem;
 }
 
 #about-me {
@@ -30,7 +30,7 @@ ul {
 }
 
 li {
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 a {
@@ -47,24 +47,24 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 5rem;
 }
 
 img {
     border-radius: 10%;
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
 }
 
 #skills ul {
     list-style-type: "-  ";
-    padding-left: 20px;
+    padding-left: 1.25rem;
     font-style: italic;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
 }
