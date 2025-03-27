@@ -8,16 +8,16 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 0.625rem 0;
+    padding: 1rem;
     text-align: center;
 }
 
 section {
-    margin: 1.25rem;
-    padding: 1.25rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
     background-color: #f9f9f9;
-    border: 0.0625rem solid #e3e3e3;
-    border-radius: 0.3125rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
 }
 
 #about-me {
@@ -30,7 +30,7 @@ ul {
 }
 
 li {
-    margin: 0.625rem;
+    margin: 0.5rem 0;
 }
 
 a {
@@ -47,24 +47,58 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
+    flex-wrap: wrap; 
 }
 
 img {
     border-radius: 10%;
-    width: 15.625rem;
-    height: 15.625rem;
+    width: 13rem;
+    height: 13rem;
 }
 
 #skills ul {
     list-style-type: "-  ";
-    padding-left: 1.25rem;
+    padding-left: 1rem;
     font-style: italic;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 0.625rem 0;
+    padding: 1rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    #cnt1 {
+        gap: 1.5rem;
+    }
+
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    img {
+        width: 9.375rem; 
+        height: 9.375rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #cnt1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 7.5rem;  
+        height: 7.5rem;
+    }
+
+    section {
+        margin: 0.75rem;
+        padding: 0.75rem;
+    }
 }
